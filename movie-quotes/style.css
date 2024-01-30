@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300&family=Kalam:wght@300;700&family=Sixtyfour&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Sixtyfour&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,300;0,400;1,300;1,400&family=Sixtyfour&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Condensed:ital,wght@0,500;0,700;0,900;1,400&family=Rubik:ital,wght@0,300;0,400;1,300;1,400&family=Sixtyfour&display=swap');
+
+h1{
+    font-family: 'Sixtyfour', sans-serif;
+    font-size: 2.5em;
+}
+
+body {
+    font-family: 'Courier Prime', monospace;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 40px;
+    font-size: 18px;
+}
+
+.quote {
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+}
+
+.character {
+    font-weight: 500; 
+    color: #FFD700; 
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 22px;
+}
+
+.action{
+    font-weight: 500; 
+    color: rgb(194, 191, 191); 
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+}
+
