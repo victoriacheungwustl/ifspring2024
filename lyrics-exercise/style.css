@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cabin', sans-serif;
+    background-color: #f6f0f0;
+    letter-spacing:2px;
+}
+
+h2{
+    font-size: 40px;
+    font-family: 'Playfair Display', serif;
+}
+
+.container {
+    display: flex;
+}
+
+h1{
+    /* font-family: 'Playfair Display', serif; */
+}
+
+.sidebar {
+    width: 400px;
+    height: 100vh;
+    background-color: #cbcaca; /* Light background color */
+    padding: 50px;
+    position: fixed;
+}
+
+.sidebar img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.lyrics {
+    margin-left: 400px; /* Adjust margin to match sidebar width */
+    padding: 40px;
+    padding-left: 300px;
+}
+
+.scrollable-lyrics {
+    /* max-height: 100vh; */
+    overflow-y: auto;
+    font-size: 20px;
+    font-weight: 400; 
+}
+
+h1, h2, p {
+    margin: 0;
+}
+
+/* Add additional styles as needed */
