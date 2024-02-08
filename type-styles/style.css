@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap');
+
+body{
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    font-size: 24px;
+    padding: 8px 80px;
+}
+
+.label {
+    font-size: 16px;
+    margin-top: 24px;
+    margin-bottom: 0px;
+    color: #5245d6;
+}
+
+section{
+    padding-bottom: 15px;
+}
+
+header{
+    padding-bottom: 15px;
+}
+
+.fontWeight-300{
+    font-weight: 300;
+}
+
+.fontWeight-500{
+    font-weight: 500;
+}
+
+.fontWeight-700{
+    font-weight: 700;
+}
+
+.fontStyle-normal{
+    font-style: normal;
+}
+
+.fontStyle-italic{
+    font-style: italic;
+}
+
+.letterSpacing-normal{
+    letter-spacing: normal;
+}
+
+.letterSpacing-wider{
+    letter-spacing: .3em;
+}
+
+.letterSpacing-narrower{
+    letter-spacing: -.06em;
+}
+
+.textDecoration-normal{
+    text-decoration: normal;
+}
+
+.textDecoration-underline{
+    text-decoration: underline;
+}
+
+.textDecoration-lineThrough{
+    text-decoration: line-through;
+}
+
+.textDecoration-overline{
+    text-decoration: overline;
+}
+
+.textTransform-none{
+    text-transform: none;
+}
+
+.textTransform-uppercase{
+    text-transform: uppercase;
+}
+
+.textTransform-lowercase{
+    text-transform: lowercase;
+}
+
+.textTransform-capitalize{
+    text-transform: capitalize;
+}
+
