@@ -1,12 +1,78 @@
 body{
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+  width: 90%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* if browser window is 640px or larger */
+/* when viewport width is above 640px */
 @media (min-width: 640px) {
     body {
-      background-color: lightblue;
+      background-color: #eaf6ff;
     }
+    h1{
+      font-size: 2.5rem;
+    }
+}
+
+@media(max-width: 500px){
+  h1 { 
+    font-size: 1.5rem;
   }
+}
+
+#fixed-size-grid-items ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 0;
+}
+
+/* grid of boxes that wraps horizontally */
+#fixed-size-grid-items aside {
+  width: 170px;
+  margin: 10px;
+  font-size: 0.8rem;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: none;
+}
+
+#stretchable-grid-items ul{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* small width: one across */
+#stretchable-grid-items li{
+  width: 100%;
+  display: block;
+}
+
+/* when viewpower width is greater than 480px */
+/* medium widths: 2-across */
+@media(min-width:480px){
+  #stretchable-grid-items li{
+    width: 50%;
+  }
+}
+
+/* small widths: 4-across */
+@media(min-width:640px){
+  #stretchable-grid-items li{
+    width: 25%;
+  }
+}
+
+#stretchable-grid-items aside{
+  margin: 10px;
+}
+
+
+
