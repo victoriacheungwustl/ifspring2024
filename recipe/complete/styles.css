@@ -73,6 +73,21 @@ h1, h2, p {
     }
 }
 
+.rounded-box {
+    width: 80vh;
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .rounded-box {
+        width: 90%; /* Set width to 90% of the viewport width for smaller screens */
+        padding: 10px; /* Decrease padding for smaller screens */
+        border-radius: 8px; /* Adjust border radius for smaller screens */
+    }
+}
+
 /* Add additional styles as needed */
 
 
