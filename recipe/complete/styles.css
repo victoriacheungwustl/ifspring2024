@@ -5,7 +5,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Cabin', sans-serif;
-    background-color: #f6f0f0;
+    background-color: #ebdbcc;
     letter-spacing:2px;
 }
 
@@ -25,7 +25,7 @@ h1{
 .sidebar {
     width: 400px;
     height: 100vh;
-    background-color: #cbcaca; /* Light background color */
+    background-color: #e2bc97; /* Light background color */
     padding: 50px;
     position: fixed;
 }
@@ -52,6 +52,25 @@ h1{
 
 h1, h2, p {
     margin: 0;
+}
+
+/* Media Query for Mobile View */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .sidebar,
+    .lyrics {
+        width: 100%; /* Make both sidebar and lyrics full width */
+        margin-left: 0; /* Remove margin for lyrics */
+        padding: 20px; /* Adjust padding */
+    }
+
+    .sidebar {
+        position: static; /* Remove fixed positioning */
+        height: auto; /* Allow height to adjust automatically */
+    }
 }
 
 /* Add additional styles as needed */
