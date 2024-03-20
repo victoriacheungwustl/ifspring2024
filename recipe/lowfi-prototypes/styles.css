@@ -1,0 +1,4 @@
+img {
+    height: 70vh; /* Set the height of the image to 80% of the viewport height */
+    width: auto; /* Let the width adjust automatically to maintain aspect ratio */
+}
