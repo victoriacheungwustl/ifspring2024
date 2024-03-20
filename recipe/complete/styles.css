@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cabin', sans-serif;
+    background-color: #f6f0f0;
+    letter-spacing:2px;
+}
+
+h2{
+    font-size: 40px;
+    font-family: 'Playfair Display', serif;
+}
+
+.container {
+    display: flex;
+}
+
+h1{
+    /* font-family: 'Playfair Display', serif; */
+}
+
+.sidebar {
+    width: 400px;
+    height: 100vh;
+    background-color: #cbcaca; /* Light background color */
+    padding: 50px;
+    position: fixed;
+}
+
+.sidebar img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.lyrics {
+    margin-left: 300px; /* Adjust margin to match sidebar width */
+    padding: 40px;
+    padding-left: 300px;
+}
+
+.scrollable-lyrics {
+    /* max-height: 100vh; */
+    overflow-y: auto;
+    font-size: 20px;
+    font-weight: 400; 
+    margin-right: 10%;
+}
+
+h1, h2, p {
+    margin: 0;
+}
+
+/* Add additional styles as needed */
+
+
+
+/* Reset some default styles
+body, h1, h2, h3, p, ul, ol {
+    padding: 0;
+}
+
+/* Global styles 
+body {
+    font-family: Arial, sans-serif;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+/* Hero section styles
+.hero {
+    height: 75vh;
+    background-image: url('curry2.jpg');  
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+} 
+
+.fit-image {
+    width: auto; /* Make the image fill the container horizontally 
+    height: 100%; /* Allow the height to adjust automatically to maintain aspect ratio 
+   
+}
+
+.hero-container{
+    display: flex;
+    height: 50vh;
+}
+
+.hero-content {
+    width: 40%; 
+}
+
+.image{
+    width: 60%;
+}
+
+/* Buttons section styles 
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.buttons button {
+    margin: 10px 10px;
+}
+
+/* Two columns section styles 
+.two-columns {
+    display: flex;
+}
+
+.left-column {
+    flex: 1;
+    width: 40%;
+    margin-right: 20px;
+}
+
+.right-column {
+    flex: 1;
+    width: 60%;
+    margin-right: 20px;
+}
+
+.box {
+    background-color: #f0f0f0;
+    padding: 15%;
+    margin-bottom: 20px; /* Adds space between boxes 
+    border: 2px solid #000; /* Border style 
+    border-radius: 10px; /* Rounded corners 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align content to the top 
+}
+
+/* Responsive styles 
+@media (max-width: 768px) {
+    .two-columns {
+        flex-direction: column;
+    }
+
+    .right-column {
+        width: 100%;
+    }
+} */
+
