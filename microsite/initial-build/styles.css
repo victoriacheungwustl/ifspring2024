@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Madimi+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('background-image.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    color: #333; /* Default text color */
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    padding: 20px;
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.centered {
+    text-align: center;
+}
+
+.content {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    padding: 20px;
+    margin: 20px auto; /* Center content horizontally */
+    max-width: 800px; /* Set maximum width for content */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a slight shadow */
+    margin-top: 700px; /* Adjust the margin to move it further down */
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #eef4f4;
+    position: sticky;
+    bottom: 0; /* Stick to the bottom */
+    width: 100%;
+}
+
+.navbar a {
+    color: #bf6d56;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: inline-block;
+}
+
+.navbar a.logo {
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar a.right {
+    float: right;
+}
+
+.navbar a.right:not(:last-child) {
+    margin-right: 10px;
+}
+
+.navbar a:hover {
+    background-color: rgb(130, 130, 130);
+}
+
+.navbar a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .navbar a.right {
+        float: none;
+        text-align: right;
+    }
+}
