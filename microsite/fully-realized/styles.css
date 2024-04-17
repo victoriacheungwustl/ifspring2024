@@ -99,7 +99,10 @@ h2{
     text-decoration: underline;
 }
 
-
+a{
+    font-family: "Raleway", sans-serif;
+    color: #bf6d56;
+}
 
 
 /* @media screen and (max-width: 600px) {
