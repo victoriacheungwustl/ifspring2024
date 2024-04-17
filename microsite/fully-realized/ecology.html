@@ -33,7 +33,33 @@
         </div>
     </div>
 </div>
-
+<!-- JAVASCRIPT FOR BOLDING THE PAGE YOU'RE ON IN NAVBAR -->
+<script>
+    // Get the current page URL
+    var currentPage = window.location.pathname;
+    
+    // Extract the filename from the path (e.g., "ecology.html")
+    var currentPageFilename = currentPage.substring(currentPage.lastIndexOf('/') + 1);
+    
+    // Get all links in the navbar
+    var links = document.querySelectorAll('.navbar a');
+    
+    // Loop through each link
+    for (var i = 0; i < links.length; i++) {
+      // Extract the filename from the href attribute of the link
+      var linkHref = links[i].getAttribute('href');
+      var linkFilename = linkHref.substring(linkHref.lastIndexOf('/') + 1);
+    
+      // Check if the filename matches the current page filename
+      if (linkFilename === currentPageFilename) {
+        // Add the 'active' class to the link
+        links[i].classList.add('active');
+        // Exit the loop since we found the active link
+        break;
+      }
+    }
+    </script>
+    
 
 </body>
 
