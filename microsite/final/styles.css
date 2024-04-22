@@ -55,7 +55,7 @@ h2{
 
 .content {
     background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
-    padding: 3%;
+    padding: 5%;
     margin: 20px auto; /* Center content horizontally */
     max-width: 800px; /* Set maximum width for content */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a slight shadow */
@@ -106,6 +106,48 @@ a{
     color: #bf6d56;
 }
 
+/* subpage image styling */
+img{
+    margin-bottom:20px;
+}
+.tourism{
+    float: right;
+    margin-left: 20px;
+}
+
+.fishing{
+    float:left;
+    margin-right: 20px;
+}
+
+.climate-change{
+    float: right;
+    margin-left: 20px;
+}
+
+.pollution{
+    float: right;
+    margin-left: 20px;
+}
+
+.shark{
+    float:left;
+    margin-right: 20px;
+}
+
+.turtle{
+    float: right;
+    margin-left: 20px;
+}
+
+.coral{
+    float:left;
+    margin-right: 20px;
+    margin-bottom:30px;
+}
+
+/* FOOTER  */
+
 .footer {
     background-color: #eef4f4;
     color: #a65e4a;
@@ -118,7 +160,7 @@ a{
   }
 
 
-
+/* DROPDOWN MENU FOR SMALLER SCREEN SIZES */
 .sidebar{
     position: fixed;
     top: 0; 
