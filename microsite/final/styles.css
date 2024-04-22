@@ -72,7 +72,7 @@ h2{
     font-family: "Raleway", sans-serif;
 }
 
-.navbar a {
+.navbar a, svg {
     color: #bf6d56;
     text-decoration: none;
     padding: 14px 20px;
@@ -85,7 +85,7 @@ h2{
     font-weight: bold;
 }
 
-.navbar a.right {
+.navbar a.right, svg {
     float: right;
 }
 
@@ -127,7 +127,7 @@ a{
     width: 40vw;
     z-index: 999;
     background-color:  #eef4f4a9;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
@@ -140,4 +140,31 @@ a{
 
 #sidebar{
     z-index: 999;
+}
+
+svg{
+    fill:  #bf6d56;
+}
+
+.menu-button{
+    display: none;
+}
+
+@media(max-width: 840px){
+    .hideOnMobile{
+        display: none;
+    }
+
+    .menu-button{
+        display: block;  
+    }
+
+    .menu-button:hover{
+        display: block;  
+        background-color: rgb(153, 152, 152);
+    }
+
+    .close-button:hover{
+        background-color: rgb(153, 152, 152);
+    }
 }

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Great Barrier Reef</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome for menu icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  
+</head>
+
+<body>
+  <!-- SIDEBAR FOR MOBILE (hidden on)-->
+  <div class="navbar" id="sidebar">
+  <ul class="sidebar">
+    <svg class="close-button" onclick=hideSideBar() xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+    <a href="ecology.html" class="right">Ecology</a>
+    <a href="environmental-threats.html" class="right">Environmental Threats</a>
+    <a href="human-use.html" class="right">Human Use</a>
+    <a href="protection-plan.html" class="right">Protection Plan</a>
+  </ul>
+</div>
+
+  <!-- DESKTOP NAVBAR -->
+  <div class="navbar">
+    
+    <a href="index.html" class="logo">Homepage</a>
+    <svg class="menu-button" onclick=showSideBar() xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+    <div class="hideOnMobile">
+    <a href="ecology.html" class="right">Ecology</a>
+    <a href="environmental-threats.html" class="right">Environmental Threats</a>
+    <a href="human-use.html" class="right">Human Use</a>
+    <a href="protection-plan.html" class="right">Protection Plan</a>
+  </div>
+  </div>
+  
+
+  <div class="hero">
+    <div class="container">
+      <div class="centered">
+        <h1 id="title">The Great Barrier Reef</h1>
+        <p>Help Save Our Reefs!</p>
+        <a href="#homepage-content">Read More</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="content" id="homepage-content">
+    <h1>What is the Great Barrier Reef?</h1>
+    <p>The Great Barrier Reef supports an extraordinary diversity of life, including many vulnerable or endangered
+      species, some of which may be endemic to the reef system.[43][44]. Thirty species of cetaceans have been recorded
+      in the Great Barrier Reef, including the dwarf minke whale, Indo-Pacific humpback dolphin, and the humpback whale.
+      Large populations of dugongs live there.[44][45][46] More than 1,500 fish species live on the reef, including the
+      clownfish, red bass, red-throat emperor, and several species of snapper and coral trout.[45] Forty-nine species
+      mass spawn, while eighty-four other species spawn elsewhere in their range.[47] Seventeen species of sea snake
+      live on the Great Barrier Reef in warm waters up to 50 metres (160 ft) deep and are more common in the southern
+      than in the northern section. None found in the Great Barrier Reef World Heritage Area are endemic, nor are any
+      endangered.</p>
+    <p>A large part of the reef is protected by the Great Barrier Reef Marine Park, which helps to limit the impact of
+      human use, such as fishing and tourism. Other environmental pressures on the reef and its ecosystem include runoff
+      of manmade pollutants, climate change accompanied by mass coral bleaching, dumping of dredging sludge and cyclic
+      population outbreaks of the crown-of-thorns starfish.</p>
+    <p>The Great Barrier Reef has long been known to and used by the Aboriginal Australian and Torres Strait Islander
+      peoples, and is an important part of local groups' cultures and spirituality. The reef is a very popular
+      destination for tourists, especially in the Whitsunday Islands and Cairns regions. Tourism is an important
+      economic activity for the region, generating over AUD$3 billion per year.[15] In November 2014, Google launched
+      Google Underwater Street View in 3D of the Great Barrier Reef.[16]</p>
+    <p>A March 2016 report stated that coral bleaching was more widespread than previously thought, seriously affecting
+      the northern parts of the reef as a result of warming ocean temperatures.[17] In October 2016, Outside published
+      an obituary for the reef;[18] the article was criticised for being premature and hindering efforts to bolster the
+      resilience of the reef.[19] In March 2017, the journal Nature published a paper showing that huge sections of an
+      800-kilometre (500 mi) stretch in the northern part of the reef had died in the course of 2016 of high water
+      temperatures, an event that the authors put down to the effects of global climate change.[20] The percentage of
+      baby corals being born on the Great Barrier Reef dropped drastically in 2018 and scientists are describing it as
+      the early stage of a "huge natural selection event unfolding". Many of the mature breeding adults died in the
+      bleaching events of 2016–17, leading to low coral birth rates. The types of corals that reproduced also changed,
+      leading to a "long-term reorganisation of the reef ecosystem if the trend continues."[21]</p>
+    <p>The Great Barrier Reef Marine Park Act 1975 (section 54) stipulates an Outlook Report on the Reef's health,
+      pressures, and future every five years. The last report was published in 2019.[22] In March 2022, another mass
+      bleaching event has been confirmed, which raised further concerns about the future of this reef system, especially
+      when considering the possible effects of El Niño weather phenomenon.[23]
+    <p>The Australian Institute of Marine Science conducts annual surveys of the Great Barrier Reef's status, and the
+      2022 report showed the greatest recovery in 36 years. It is mainly due to the regrowth of two-thirds of the reef
+      by the fast-growing Acropora coral, which is the dominant coral there.[24]</p>
+    <!-- More content here -->
+  </div>
+
+  <!-- JAVASCRIPT FOR BOLDING THE PAGE YOU'RE ON IN NAVBAR -->
+  <script>
+    // Get the current page URL
+    var currentPage = window.location.pathname;
+    
+    // Extract the filename from the path (e.g., "ecology.html")
+    var currentPageFilename = currentPage.substring(currentPage.lastIndexOf('/') + 1);
+    
+    // Get all links in the navbar
+    var links = document.querySelectorAll('.navbar a');
+    
+    // Loop through each link
+    for (var i = 0; i < links.length; i++) {
+      // Extract the filename from the href attribute of the link
+      var linkHref = links[i].getAttribute('href');
+      var linkFilename = linkHref.substring(linkHref.lastIndexOf('/') + 1);
+    
+      // Check if the filename matches the current page filename
+      if (linkFilename === currentPageFilename) {
+        // Add the 'active' class to the link
+        links[i].classList.add('active');
+        // Exit the loop since we found the active link
+        break;
+      }
+    }
+
+    function showSideBar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display ='flex'
+    }
+
+    function hideSideBar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display ='none'
+    }
+    </script>
+   <footer class="footer">
+    <p>&#169; 2024 Victoria Cheung</p>
+    <p>Creative Director: Abigail Li</p>
+    <p>Text sourced from <a href="https://en.wikipedia.org/wiki/Great_Barrier_Reef">Wikipedia: Great Barrier Reef</a></p>
+  </footer>    
+
+</body>
+
+</html>
