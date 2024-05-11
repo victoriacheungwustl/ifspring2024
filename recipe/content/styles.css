@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #faebe8;
+}
+
+h1, h2{
+    font-family: "Madimi One", sans-serif;
+}
+
+header, footer {
+    background-color: rgba(164, 80, 32, 0.852);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.ingredients, .instructions, .recipe-websites, .nonrecipe-websites, .image-section {
+    background-color: #fff;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.nonrecipe-websites{
+    margin-bottom: 120px;
+}
+
+h2 {
+    color: #333;
+}
+
+ul, ol {
+    list-style-type: circle;
+    padding: 0;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.image-section {
+    display: flex;
+}
+
+.image-section img {
+    max-width: 33.33%; /* Each image takes up one-third of the section */
+    height: auto;
+    margin-right: 20px; /* Add 10px of margin to the right of each image */
+}
+
+/* To remove the right margin from the last image */
+.image-section img:last-child {
+    margin-right: 0;
+}
