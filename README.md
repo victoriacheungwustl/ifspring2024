@@ -5,3 +5,5 @@ A collection of my coursework from my Interaction Foundations class. Built with 
 [Recipe Page for Japanese Curry](https://victoriacheungwustl.github.io/ifspring2024/recipe/complete/index.html)  <br>  <br>
 [The Great Barrier Reef- Wikipedia article microsite](https://victoriacheungwustl.github.io/ifspring2024/microsite/final/index.html) - Creative Developer <br>  <br>
 [All About Capybaras- Wikipedia article microsite](https://freyaqin.github.io/ifspring2024/microsite/final/index.html) - Creative Director <br>  <br>
+
+For my other projects, take a look at my profile page!
